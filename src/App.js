@@ -2,14 +2,13 @@ import React from 'react';
 import gsap from 'gsap';
 import './App.css';
 
+//component imports
 import NavBar from './components/NavBar.js';
-
+import Hero from './components/Hero.js';
 
 export default function App() {
+
   
-  function greenSock() {
-    gsap.to('h1', {duration: 2, x: 300});
-  }
   
   return (
 
@@ -17,8 +16,9 @@ export default function App() {
 
       <NavBar />
 
-      <h1 onClick = {greenSock}>Lets Learn Greensock!</h1>
+      <Hero />
 
     </div>
   )
 }
+
