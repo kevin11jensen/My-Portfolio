@@ -8,7 +8,8 @@ export default function NavBar() {
         <div>
 
             <StyledNav>
-                <h1>Welcome to Kevin11Jensen.com</h1>
+                <p>Welcome to Kevin11Jensen.com</p>
+                
             </StyledNav>
     
         </div>
@@ -17,4 +18,9 @@ export default function NavBar() {
 
 const StyledNav = styled.nav `
     background-color: blue;
+    color: white;
+    h1 {
+        font-size: 6rem;
+        text-align: center;
+    }
 `

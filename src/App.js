@@ -13,6 +13,8 @@ export default function App() {
 
       <NavBar />
 
+      <h1>Lets Learn Greensock!</h1>
+
     </div>
   )
 }
