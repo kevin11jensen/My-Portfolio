@@ -8,7 +8,7 @@ export default function NavBar() {
         <div>
 
             <nav>
-                Kevin11Jensen.com
+                Welcome to Kevin11Jensen.com
             </nav>
     
         </div>
