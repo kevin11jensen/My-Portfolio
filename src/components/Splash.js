@@ -5,7 +5,7 @@ import gsap from 'gsap';
 
 export default function Splash() {
     function splash() {
-        gsap.from('.splash', {x: '-500', y: '-500', duration: '3', ease: 'bounce'})
+        gsap.from('.splash', {x: '-500', y: '-500', duration: '3', rotate: '360', ease: 'bounce', fontSize: '2rem'})
         
     }
     return (
