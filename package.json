@@ -1,7 +1,9 @@
 {
   "name": "kevin-eleven-jensen",
+  "homepage": "http://kevin11jensen.com",
   "version": "0.1.0",
   "private": true,
+  
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -12,6 +14,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.1"
+    
   },
   "scripts": {
     "start": "react-scripts start",

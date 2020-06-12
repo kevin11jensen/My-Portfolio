@@ -5,12 +5,15 @@ import gsap from 'gsap';
 
 export default function Splash() {
     function splash() {
-        gsap.from('.splash', {x: '-500', y: '-500', duration: '3', rotate: '360', ease: 'bounce', fontSize: '.5rem'})
+        gsap.from('.splash', {duration: '3', opacity: '0',scale: '0'})
         
     }
+
+    
     return (
         <SplashDiv>
-            <h1 className = 'splash' ref = {splash}>Welcome to Kevin11Jensen.com</h1>
+            <h1 className = 'splash' ref = {splash}>Kevin11Jensen.com<br/>Coming Soon</h1>
+            
         </SplashDiv>   
     )
 }
@@ -18,14 +21,18 @@ export default function Splash() {
 const SplashDiv = styled.div `
     background-color: #0147fa;
     color: #f5fffa;
+    height: 100vh;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     overflow: hidden;
-    height: 100vh;
-    font-size: 7rem;
-    
     @media(max-width: 400px) {
         font-size: 1.6rem;
+    }
+    .splash {
+        text-align: center;
     }
 `
