@@ -1,26 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
+import gsap from 'gsap';
 
 export default function NavBar() {
 
-    return (
+    // function greenSockAni() {
+    //     gsap.from('.welcome', {duration: '1', x: '-100', ease: 'bounce', backgroundColor: '#dbe6e0'});
+    //     }
+    //     function greenSock2() {
+    //         gsap.from('.nav', {duration: '1', x: '-100', ease: 'bounce', backgroundColor: '#dbe6e0'});
+    //         }
 
+    return (
         <div>
 
-            <StyledNav>
-                <p>Welcome to Kevin11Jensen.com</p>
-                
-            </StyledNav>
+            
     
         </div>
     )
 }
 
-const StyledNav = styled.nav `
-    background-color: blue;
-    color: white;
-    h1 {
-        font-size: 6rem;
-        text-align: center;
-    }
-`
+
