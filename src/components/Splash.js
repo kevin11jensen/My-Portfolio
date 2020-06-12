@@ -29,9 +29,10 @@ const SplashDiv = styled.div `
     align-items: center;
     align-content: center;
     overflow: hidden;
-    top: 25%;
+    
     @media(max-width: 400px) {
         font-size: 1.6rem;
+        top: 25%;
     }
     .splash {
         text-align: center;
