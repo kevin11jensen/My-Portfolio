@@ -5,7 +5,7 @@ import gsap from 'gsap';
 
 export default function Splash() {
     function splash() {
-        gsap.from('.splash', {x: '-500', y: '-500', duration: '3', rotate: '360', ease: 'bounce', fontSize: '2rem'})
+        gsap.from('.splash', {x: '-500', y: '-500', duration: '3', rotate: '360', ease: 'bounce', fontSize: '.5rem'})
         
     }
     return (
@@ -24,7 +24,8 @@ const SplashDiv = styled.div `
     overflow: hidden;
     height: 100vh;
     font-size: 7rem;
+    
     @media(max-width: 400px) {
-        font-size: 3rem;
+        font-size: 1.6rem;
     }
 `
