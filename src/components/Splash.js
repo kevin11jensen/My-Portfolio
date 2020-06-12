@@ -23,5 +23,7 @@ const SplashDiv = styled.div `
     align-items: center;
     height: 100vh;
     font-size: 7rem;
-
+    @media(max-width: 400px) {
+        font-size: 3rem;
+    }
 `
