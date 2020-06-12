@@ -21,7 +21,7 @@ const SplashDiv = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 99%;
+    overflow: hidden;
     height: 100vh;
     font-size: 7rem;
     @media(max-width: 400px) {
