@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import gsap from 'gsap';
+import { device } from './device';
 
+  
 
 export default function Splash() {
     function splash() {
@@ -9,7 +11,6 @@ export default function Splash() {
         
     }
 
-    
     return (
         <SplashDiv>
             <h1 className = 'splash' ref = {splash}>Kevin11Jensen.com<br/>Coming Soon</h1>
@@ -23,23 +24,35 @@ const SplashDiv = styled.div `
     color: #f5fffa;
     height: 100vh;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 7rem;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     
     overflow: hidden;
-    @media(max-width: 1080px) {
+    @media ${device.desktopL} {
+        font-size: 9rem;
+    }
+    @media ${device.desktop} {
+        font-size: 8rem;
+    }
+    @media ${device.laptopL} {
+        font-size: 7rem;
+    }
+    @media ${device.laptop} {
         font-size: 5rem;
     }
-    @media(max-width: 850px) {
-        font-size: 4rem;
-    }
-    @media(max-width: 600px) {
+    @media ${device.tablet} {
         font-size: 3rem;
     }
-    @media(max-width: 400px) {
+    @media ${device.mobileL} {
+        font-size: 2rem;
+    }
+    @media ${device.mobileM} {
         font-size: 1.6rem;
+    }
+    @media ${device.mobileS} {
+        font-size: 1.2rem;
     }
     .splash {
         text-align: center;

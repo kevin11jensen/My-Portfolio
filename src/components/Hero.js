@@ -3,12 +3,13 @@ import styled from 'styled-components';
 import gsap from 'gsap';
 
 
-export default function Hero() {
+function Hero() {
 
     return (
         <div>
-            
+
         </div>
-    )
+    );
 }
+
 
