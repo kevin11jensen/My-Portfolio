@@ -1,5 +1,4 @@
 import React from 'react';
-import gsap from 'gsap';
 import './App.css';
 
 //component imports
@@ -10,7 +9,7 @@ import LandingPage from './components/LandingPage';
 export default function App() {
 
   return (
-    <div>
+    <div className = 'app'>
       <Splash />
       <LandingPage />
     </div>

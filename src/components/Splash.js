@@ -33,6 +33,7 @@ const SplashDiv = styled.div `
     align-items: center;
     
     overflow: hidden;
+    
     @media ${device.desktopL} {
         font-size: 9rem;
     }
