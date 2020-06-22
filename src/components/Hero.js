@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import gsap from 'gsap';
 
 
-function Hero() {
+export default function Hero() {
 
     return (
         <div>

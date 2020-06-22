@@ -12,12 +12,25 @@ export default function NavBar() {
     //         }
 
     return (
-        <div>
+        <Nav>
 
-            
-    
-        </div>
+            <h1>Kevin11Jensen.com</h1>
+            <div className = 'nav-links'>
+                What UP
+            </div>
+        </Nav>
     )
 }
+const Nav = styled.div `
+    margin-right: 3rem;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0);
+    h1 {
+        background-color: transparent;
 
+    }
+    .nav-links {
+
+    }
+`
 

@@ -3,17 +3,20 @@ import styled from 'styled-components';
 import gsap from 'gsap';
 import { device } from './device';
 
-  
+
 
 export default function Splash() {
     function splash() {
-        gsap.from('.splash', {duration: '3', opacity: '0',scale: '0'})
+        gsap.from('.splash', { duration: '3', opacity: '0',scale: '0' })
         
     }
-
+    function vanish() {
+        gsap.to('.splash-container', 3, {display: 'none'});
+        gsap.to('.splash-container', 2.9, {opacity: '0'});
+    }
     return (
-        <SplashDiv>
-            <h1 className = 'splash' ref = {splash}>Kevin11Jensen.com<br/>Coming Soon</h1>
+        <SplashDiv ref = {vanish} className = 'splash-container' >
+            <h1 className = 'splash' ref = {splash}>Welcome to Kevin11Jensen.com</h1>
             
         </SplashDiv>   
     )

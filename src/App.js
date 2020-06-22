@@ -4,14 +4,15 @@ import './App.css';
 
 //component imports
 import Splash from './components/Splash.js';
-import NavBar from './components/NavBar.js';
-import Hero from './components/Hero.js';
+import LandingPage from './components/LandingPage';
+
 
 export default function App() {
 
   return (
     <div>
       <Splash />
+      <LandingPage />
     </div>
   )
 }
